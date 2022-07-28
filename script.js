@@ -426,3 +426,28 @@
 
 // const gObj = [...getFunction()];
 // console.log(gObj);
+
+// let arr = ["Apple", "Banana", "Oranges"];
+// let lArr = arr.map((element) => {
+//   return element.length;
+// });
+// console.log(lArr);
+
+// let arr = [25, 16, 144, 36];
+// let lArr = arr.map((elem) => Math.sqrt(elem));
+// console.log(lArr);
+
+// let products = [
+//   { pCode: 1, pName: "Apple" },
+//   { pCode: 2, pName: "Banana" },
+//   { pCode: 3, pName: "Grapes" },
+//   { pCode: 4, pName: "Oranges" },
+// ];
+// let pNames = products.map((elem) => elem.pName);
+// console.log(pNames);
+
+// let arr = [2, 3, 6, 5];
+// let result = arr.reduce((accumulator, current) => {
+//   return accumulator + current;
+// }, 10);
+// console.log(result);
