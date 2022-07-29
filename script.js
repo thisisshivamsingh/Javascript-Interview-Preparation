@@ -451,3 +451,68 @@
 //   return accumulator + current;
 // }, 10);
 // console.log(result);
+
+// const employees = [
+//   { eNo: 1001, salary: 3000 },
+//   { eNo: 1002, salary: 2200 },
+//   { eNo: 1003, salary: 3400 },
+//   { eNo: 1004, salary: 6000 },
+// ];
+// employees.sort(function (a, b) {
+//   if (a.salary < b.salary) {
+//     return -1;
+//   }
+//   if (a.salary > b.salary) {
+//     return 1;
+//   }
+//   if (a.salary === b.salary) {
+//     return 0;
+//   }
+// });
+// console.log(employees);
+
+// let str = 'I\'m not new to JS';
+// console.log(str)
+
+// const user = prompt("Enter a Alphabet");
+// const vowels = ["a", "e", "i", "o", "u"];
+// if (vowels.includes(user.toLowerCase())) {
+//   alert(`${user} is a vowel`);
+// } else {
+//   alert(`${user} is a consonant`);
+// }
+
+// let ch;
+// function getVal() {
+//   ch = prompt("Enter character :");
+//   ch = ch.toLowerCase();
+//   if (ch == "a" || ch == "e" || ch == "i" || ch == "o" || ch == "u") {
+//     console.log("Is vowel");
+//   } else {
+//     console.log("Is consonant");
+//   }
+// }
+// getVal();
+
+// const proto = Object.defineProperty({}, "pCode", {
+//   writable: false,
+//   configurable: true,
+//   value: 2001,
+// });
+// const obj = Object.create(proto);
+// obj.pCode = 3001;
+// console.log(obj.pCode);
+
+class House {
+  constructor(nDoors, nWindow) {
+    this.nDoors = nDoors;
+    this.nWindow = nWindow;
+  }
+  showData() {
+    console.log(this.nDoors, this.nWindow);
+  }
+}
+const obj = new House(5, 10);
+const obj1 = new House(7, 12);
+obj.showData();
+obj1.showData();
