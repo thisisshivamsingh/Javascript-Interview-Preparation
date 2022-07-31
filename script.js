@@ -503,16 +503,69 @@
 // obj.pCode = 3001;
 // console.log(obj.pCode);
 
-class House {
-  constructor(nDoors, nWindow) {
-    this.nDoors = nDoors;
-    this.nWindow = nWindow;
-  }
-  showData() {
-    console.log(this.nDoors, this.nWindow);
-  }
-}
-const obj = new House(5, 10);
-const obj1 = new House(7, 12);
-obj.showData();
-obj1.showData();
+// class House {
+//   constructor(nDoors, nWindow) {
+//     this.nDoors = nDoors;
+//     this.nWindow = nWindow;
+//   }
+//   showData() {
+//     console.log(this.nDoors, this.nWindow);
+//   }
+// }
+// const obj = new House(5, 10);
+// const obj1 = new House(7, 12);
+// obj.showData();
+// obj1.showData();
+
+// class Child extends String {
+//   noc(str) {
+//     console.log(str.length);
+//   }
+// }
+// const obj = new Child("Test string");
+// console.log(obj.toLowerCase());
+// obj.noc("new string here");
+
+// class Parent {
+//   constructor(a) {
+//     this.a = a;
+//     console.log("Parent");
+//   }
+//   pMethod() {
+//     console.log("P Method", this.a);
+//   }
+// }
+// class Child extends Parent {}
+// const obj = new Child(12);
+// obj.pMethod();
+
+// class Vehicle {
+//   get model() {
+//     console.log("Getter executed");
+//     return "";
+//   }
+//   set model(v) {
+//     console.log("Setter executed");
+//   }
+// }
+
+// const obj = new Vehicle();
+// obj.model = "SUV";
+// console.log(obj.model);
+
+// class Vehicle {
+//   #_model = "";
+//   get model() {
+//     return this.#_model;
+//   }
+//   set model(v) {
+//     if (v.length < 3) {
+//       this.#_model = "M" + v;
+//     } else {
+//       this.#_model = v;
+//     }
+//   }
+// }
+// const obj = new Vehicle();
+// obj.model = "UV";
+// console.log(obj.model);
