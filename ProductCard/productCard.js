@@ -93,3 +93,4 @@ class ProductCard extends HTMLElement {
 }
 
 window.customElements.define("product-card", ProductCard);
+console.log("Hello World!");
