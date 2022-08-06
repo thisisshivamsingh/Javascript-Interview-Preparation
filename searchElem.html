@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1 id="cnt">Content When Page Loaded...</h1>
+    <button onclick="btnClicked()">Change Content</button>
+    <script>
+        function btnClicked() {
+            const cntEle = document.getElementById("cnt")
+            cntEle.innerHTML = "Content after button clicked";
+        }
+    </script>
+</body>
+
+</html>
