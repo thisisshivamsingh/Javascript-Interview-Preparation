@@ -1,0 +1,59 @@
+<!-- ///// HOW TO HANDLE TIMER BASED EVENTS ? ///// -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <!-- <h1 id="txt">Waiting...</h1>
+    <button onclick="tryTimer()">Start Timer</button>
+    <button onclick="stopTimer()">Stop Timer</button> -->
+    <table onclick="mainClick()">
+        <tr>
+            <th>Code</th>
+            <th>Product</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td>1001</td>
+            <td>Apple</td>
+            <td>$20</td>
+        </tr>
+        <tr>
+            <td>1002</td>
+            <td>Orange</td>
+            <td><input type="text"></td>
+        </tr>
+    </table>
+    <script>
+        // let cnt = 0;
+        // let tObj;
+
+        // function tryTimer() {
+        //     // setTimeout(() => {
+        //     //     document.getElementById("txt").innerHTML = "Timed out with arrow"
+        //     // }, 2000)
+        //     tObj = setInterval(() => {
+        //         document.getElementById("txt").innerHTML = new Date();
+        //         cnt++;
+        //     }, 1000)
+        // }
+
+        // function stopTimer() {
+        //     clearInterval(tObj);
+        // }
+
+        function mainClick() {
+            if (event.target.tagName === "TD") {
+                console.log(event.target.innerHTML)
+            } else {
+                console.log(event.target.value)
+            }
+        }
+    </script>
+</body>
+
+</html>

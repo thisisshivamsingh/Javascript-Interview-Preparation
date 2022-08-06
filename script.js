@@ -569,3 +569,11 @@
 // const obj = new Vehicle();
 // obj.model = "UV";
 // console.log(obj.model);
+
+///// DIFFERENCE BETWEEN DOCUMENT OBJECT & WINDOW OBJECT /////
+
+console.log(window.innerHeight);
+console.log(innerWidth);
+
+console.log(window.location);
+console.log(location.href);
