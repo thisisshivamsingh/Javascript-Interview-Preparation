@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        div {
+            width: 500px;
+            height: 300px;
+            display: inline-block;
+            padding: 20px;
+            background-color: blue;
+            color: white;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        input,
+        select {
+            font-size: 25px;
+            margin: 10px
+        }
+    </style>
+</head>
+
+<body>
+    <div id="divE">
+        <h1 id="msg">Event Status</h1>
+        <input type="text" onfocus="eHandler('On Focus')" onchange="eHandler('On Change')" /><br /> Check Me!<input
+            type="checkbox" onchange="eHandler(this.checked)" /><br />
+        Radio 1<input type="radio" value="Radio 1" name="r" onchange="eHandler(this.value+'-'+this.checked)" />
+        Radio 2<input type="radio" value="Radio 2" name="r" onchange="eHandler(this.value+'-'+this.checked)" /><br />
+        <select onchange="eHandler(this.options[this.selectedIndex].text)">
+            <option value="1">List 1</option>
+            <option value="2">List 2</option>
+            <option value="3">List 3</option>
+            <option value="4">List 4</option>
+        </select>
+        <input type="text" oninput="eHandler(this.value)" />
+    </div>
+    <script>
+        function eHandler(msg) {
+
+            document.getElementById("msg").innerHTML = msg;
+        }
+    </script>
+</body>
+
+</html>
