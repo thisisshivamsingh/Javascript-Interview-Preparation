@@ -104,26 +104,77 @@
 //     console.log("Program ends here...");
 //   });
 
-const p1 = new Promise((resolve, reject) => {
-  setTimeout(() => {
-    resolve("Promise 1");
-  }, 2000);
-});
-const p2 = new Promise((resolve, reject) => {
-  setTimeout(() => {
-    resolve("Promise 2");
-  }, 2000);
-});
-const p3 = new Promise((resolve, reject) => {
-  setTimeout(() => {
-    reject("Promise 3");
-  }, 1000);
-});
+// const p1 = new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     resolve("Promise 1");
+//   }, 2000);
+// });
+// const p2 = new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     resolve("Promise 2");
+//   }, 2000);
+// });
+// const p3 = new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     reject("Promise 3");
+//   }, 1000);
+// });
 
-Promise.race([p1, p2, p3])
-  .then((prMsgs) => {
-    console.log(prMsgs);
-  })
-  .catch((err) => {
-    console.log("Error " + err);
-  });
+// Promise.race([p1, p2, p3])
+//   .then((prMsgs) => {
+//     console.log(prMsgs);
+//   })
+//   .catch((err) => {
+//     console.log("Error " + err);
+//   });
+
+// async function test() {
+//   return 0;
+// }
+// const fn = test();
+// console.log(fn);
+
+// async function test() {
+//   throw new Error("Err Found");
+// }
+// const fn = test();
+// console.log(fn);
+
+// const test = async () => {
+//   return 0;
+// };
+// const fn = test();
+// console.log(fn);
+
+// const cSqr = (a) => {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       resolve(a * a);
+//     }, 2000);
+//   });
+// };
+
+// cSqr(2).then((res) => {
+//   console.log(res);
+// });
+
+// (async function () {
+//   try {
+//     let res = await cSqr(2);
+//     console.log(res);
+//     let res1 = await cSqr(res);
+//     console.log(res1);
+//     let res2 = await cSqr(res1);
+//     console.log(res2);
+//   } catch (err) {
+//     //handle error
+//   }
+// })();
+
+// async function test() {}
+
+// test()
+//   .then(() => {})
+//   .catch();
+
+
